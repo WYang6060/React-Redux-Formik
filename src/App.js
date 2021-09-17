@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./styles.css";
 import { login, logout } from "./store/user";
-import { Field, Form, Formik } from "formik";
+import { Formik, Form, Field } from "formik";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -15,7 +15,6 @@ export default function App() {
       </div>
     );
   }
-
   return (
     <div className="App">
       <Formik
